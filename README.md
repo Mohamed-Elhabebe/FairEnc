@@ -58,7 +58,7 @@ Install the required Python packages using:
 
 ```bash
 pip install -r requirements.txt
-
+```
 ---
 
 ## 🔧 Placeholders to Replace in the `.sh` Scripts
