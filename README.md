@@ -1,23 +1,34 @@
 # FairEnc: A Fair Vision-Language Model with Fair Vision and Text Encoders for Glaucoma Detection
 
-This repository contains the official implementation for the paper:
+This repository contains the official implementation of:
 
 > **FairEnc: A Fair Vision-Language Model with Fair Vision and Text Encoders for Glaucoma Detection**
 
 ---
 
+## 🏗️ FairEnc Framework
+
+<p align="center">
+  figs/FairEnc_Architecture.png
+</p>
+
+<p align="center">
+  <em>
+  Overview of FairEnc. The framework jointly debiases textual and visual representations through synthetic clinical note generation, contrastive text learning, mutual information regularization, and adversarial debiasing.
+  </em>
+</p>
+
+---
+
 ## 📄 Abstract
 
-Automated glaucoma detection is critical for preventing irreversible vision loss and reducing the burden on healthcare systems. However, ensuring fairness across diverse patient populations remains a significant challenge. In this paper, we propose **FairEnc**, a fair pretraining method for vision-language models (VLMs) that enables simultaneous debiasing across multiple sensitive attributes.
+Automated glaucoma detection is critical for preventing irreversible vision loss and reducing the burden on healthcare systems. However, ensuring fairness across diverse patient populations remains a significant challenge.
+
+In this paper, we propose **FairEnc**, a fair pretraining method for vision-language models (VLMs) that enables simultaneous debiasing across multiple sensitive attributes.
 
 FairEnc jointly mitigates biases in both textual and visual modalities with respect to multiple sensitive attributes, including **race, gender, ethnicity, and language**. Specifically, for the textual encoder, we leverage a large language model to generate synthetic clinical descriptions with varied sensitive attributes while preserving disease semantics, and employ a contrastive alignment objective to encourage demographic-invariant representations. For the visual encoder, we propose a dual-level fairness strategy that combines **mutual information regularization** to reduce statistical dependence between learned features and demographic groups with **multi-discriminator adversarial debiasing**.
 
-Comprehensive experiments on the publicly available **Harvard-FairVLMed** dataset show that FairEnc reduces demographic disparities measured by **DPD** and **DEOdds** while achieving strong diagnostic performance under both **zero-shot** and **linear probing** evaluations. Additional experiments on the **FairFundus** dataset suggest that the fairness benefits of FairEnc generalize to cross-domain and cross-modality settings while maintaining diagnostic performance within a competitive range. These results highlight FairEnc’s ability to generalize fairness under distribution shifts, supporting its potential for more equitable deployment in real-world clinical settings.
----
-
-## 🏗️ FairEnc Framework
-
-<p align="center">figs/FairEnc_Architecture.png</p>
+Comprehensive experiments on the publicly available **Harvard-FairVLMed** dataset show that FairEnc reduces demographic disparities measured by **DPD** and **DEOdds** while achieving strong diagnostic performance under both **zero-shot** and **linear probing** evaluations. Additional experiments on the **FairFundus** dataset suggest that the fairness benefits of FairEnc generalize to cross-domain and cross-modality settings while maintaining diagnostic performance within a competitive range. These results highlight FairEnc's ability to generalize fairness under distribution shifts, supporting its potential for more equitable deployment in real-world clinical settings.
 
 ---
 
