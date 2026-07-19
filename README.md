@@ -8,9 +8,13 @@ This repository contains the official implementation of:
 
 ## 🏗️ FairEnc Framework
 
-figs/FairEnc_Architecture.png
+<p align="center"><img src="figs/FairEnc_Architecture.png" /></p>
 
-*Overview of FairEnc. The framework jointly debiases textual and visual representations through synthetic clinical note generation, contrastive text learning, mutual information regularization, and adversarial debiasing.*
+<p align="center">
+  <em>
+  Overview of FairEnc. The framework jointly debiases textual and visual representations through synthetic clinical note generation, contrastive text learning, mutual information regularization, and adversarial debiasing.
+  </em>
+</p>
 
 ---
 
